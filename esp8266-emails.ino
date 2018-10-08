@@ -135,3 +135,8 @@ byte emailResp() {
   }
   return 1;
 }
+byte IsResponded(){
+  if (!emailResp()) {
+    return 0;
+  }
+}
